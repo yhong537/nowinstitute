@@ -1,0 +1,245 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+  {{> submenu-program}}
+
+    <!-- Main -->
+    <main class="main col-md-10 sidebar-left" role="main">
+      <article class="{{post_class}}">
+
+        <section class="post-content program-content-production">
+
+
+          <div class="page-header">
+            <h2>우리 회사만의 영어 매뉴얼 및 교육 설립!</h2>
+            <blockquote></blockquote>
+          </div>
+
+
+          <h2>Process Of Constructing English Program</h2>
+
+          <div class="table-box production-construction">
+
+          <h3><span>1.</span> 현 실정과 업무 그리고 니즈를 파악</h3>
+          <p>효과적인 커리큘럼을 위해 현 직원들의 영어 업무 능력과 그에 따른 니즈를 파악합니다.</p>
+
+
+          <h3><span>2.</span> 범위 범주를 확립</h3>
+          <p>회사 특성에 맞는 범위 범주를 확립하여 정확한 “처음”과 “끝“을 정해 정확한 목표를 설정합니다.</p>
+
+
+          <h3><span>3.</span> 레벨의 단계를 세분화</h3>
+          <p>확립된 범위 범주를 토대로 레벨을 세분화해 단계적인 교육을 시행 할 수 있도록 합니다.</p>
+
+
+          <h3><span>4.</span> 레벨에 따른 다양한 강의 개발 및 구성</h3>
+          <p>동일 레벨에도 팀 특성과 개인의 업무에 적절한 강의 및 교육을 구성하여 개별화되고 효과적인 교육을 도모합니다.</p>
+
+
+          </div>
+
+
+          <hr>
+
+
+          <h2>Example Of Individualised English Program</h2>
+
+          <div class="table-box production-example">
+            <table class="table table-bordered table-hover table-fixedheader">
+            <thead>
+              <tr>
+                <th style="width: 8%">Level2</th>
+                <th style="width: 31%">Mr. Park</th>
+                <th style="width: 31%">Mrs. Lim</th>
+                <th style="width: 15%">Mr. Lee</th>
+                <th style="width: 15%">Ms. Han</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>GRAM Speak I</th>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td> </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <th>GRAM Speak II</th>
+                <td><i class="fa fa-check"></i></td>
+                <td> </td>
+                <td> </td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <th>Everyday ENG I</th>
+                <td> </td>
+                <td> </td>
+                <td><i class="fa fa-check"></i></td>
+                <td> </td>
+              </tr>
+              <tr>
+                <th>Everyday ENG II</th>
+                <td><i class="fa fa-check"></i></td>
+                <td> </td>
+                <td><i class="fa fa-check"></i></td>
+                <td> </td>
+              </tr>
+              <tr>
+                <th>Basic 300 PTs I</th>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <th>Basic 300 PTs II</th>
+                <td> </td>
+                <td> </td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <th>Topic Discussion</th>
+                <td> </td>
+                <td><i class="fa fa-check"></i></td>
+                <td> </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <th>Basic Business</th>
+                <td><i class="fa fa-check"></i></td>
+                <td> </td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+            </tbody>
+            </table>
+          </div>
+
+
+          <hr>
+
+
+          <h2>Process Of Evaluation System</h2>
+
+
+          <div class="row production-evaluation">
+
+            <div class="col-sm-4 list-1">
+              <i class="fa fa-tasks"></i>
+              <h3>레벨, 팀 업무 파악</h3>
+              <p>진급 대상자의 영어 실력과, 팀 업무를 선행 파악하여 대상자에게 적절한 교육과 강의를 선정한다.</p>
+            </div>
+
+
+            <div class="col-sm-4 list-2">
+              <i class="fa fa-list-alt"></i>
+              <h3>영어 프로그램 교육</h3>
+              <p>영어 교육 시스템을 토대로 연평균 수강 해야 하는 강의의 횟수와 개수를 정하여 점진적인 교육을 시행한다. </p>
+            </div>
+
+            <div class="col-sm-4 list-3">
+               <i class="fa fa-calendar-check-o"></i>
+              <h3>평가 후 반영</h3>
+              <p>참여도와 성실도, 강의에 따른 기타 평가 기준을 정해놓고 강의를 수료 후 평가를 합산해 그 점수를 반영한다. </p>
+            </div>
+
+          </div>
+
+
+          <hr>
+
+
+          <h2>Fairness In Evaluation</h2>
+
+          <div class="row production-fairness">
+
+            <div class="col-sm-12">
+              <img src="{{asset "img/img-program-production-graph.jpg"}}">
+            </div>
+
+
+<!--
+            <div class="fairness-box box-a">
+              <h3>60% <small>레벨 1의 수업을 완료한 A 대리</small></h3>
+              <p>평가의 공정성을 위해 각 레벨에 따른 최고점을 상대적으로 정해 놓는다.</p>
+              <dl>
+                <dt>Level1</dt>
+                  <dd>60%</dd>
+                <dt>Level2</dt>
+                  <dd>70%</dd>
+                <dt>Level3</dt>
+                  <dd>80%</dd>
+                <dt>Level4</dt>
+                  <dd>90%</dd>
+              </dl>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%;">
+                  <span class="sr-only">60% Complete</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="fairness-box box-b">
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 80%;">
+                  <span class="sr-only">80% Complete</span>
+                </div>
+              </div>
+              <h3>80% <small>레벨 3의 수업을 완료한 B 차장</small></h3>
+              <p>위의 점수는 레벨 3의 수업을 완료한 사람의 평가가 만점을 맞았을 경우로, 레벨 1의 수업을 완료한 사람보다 20점이 더 높은 것을 알 수 있다.</p>
+              <dl>
+                <dt>참여도</dt>
+                  <dd>20</dd>
+                <dt>출석</dt>
+                  <dd>20</dd>
+                <dt>인터뷰 평가</dt>
+                  <dd>60</dd>
+                <dt>총점</dt>
+                  <dd>100</dd>
+              </dl>
+            </div>
+
+-->
+
+          </div>
+
+
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

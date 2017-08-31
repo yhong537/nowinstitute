@@ -1,0 +1,182 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+
+  {{> submenu-company}}
+
+
+    <!-- Main -->
+    <main class="main col-md-10 sidebar-left" role="main">
+      <article class="{{post_class}}">
+
+        <section class="post-content">
+
+
+        <!-- Form Name -->
+        <div class="page-header">
+          <h2>채용안내</h2>
+          <blockquote>나우어학원에서 <span>최고의 강사님</span>들을 찾습니다!</blockquote>
+          <br />
+          <p class="text-center"><a href="mailto:admin@nowinstitute.co.kr" target="_top">admin@nowinstitute.co.kr</a>으로 이력서 송부 가능 합니다.<br />빠른 답변을 원하시면 (031) 611 0100로 연락해 주세요.<br />
+            <small>*필수입력 항목입니다. 반드시 기재해 주시기 바랍니다.</small>
+          </p>
+        </div>
+
+
+
+
+        <form id="form2" name="form2" class="form-horizontal wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://nowinstitute.wufoo.com/forms/m1cv5fdb1wqpm08/#public">
+
+
+          <!-- Text input Name -->
+          <div id="foli1" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title1" for="Field1">이름<span class="req">*</span></label>
+            <div class="col-md-8">
+              <input id="Field1" name="Field1" type="text" class="form-control input-md" placeholder="" required />
+            </div>
+          </div>
+
+          <!-- Text input Email -->
+          <div id="foli2" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title2" for="Field2">이메일 주소<span class="req">*</span></label>
+            <div class="col-md-8">
+              <input id="Field2" name="Field2" type="email" class="form-control input-md" placeholder="" spellcheck="false" required />
+            </div>
+          </div>
+
+          <!-- Text input Phone -->
+          <div id="foli3" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title3" for="Field3">전화번호<span class="req">*</span></label>
+            <div class="col-md-8">
+              <input id="Field3" name="Field3" type="tel" class="form-control input-md" placeholder="" spellcheck="false" required />
+            </div>
+          </div>
+
+          <!-- Text input program1 -->
+          <div id="foli209" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title209" for="Field209">희망 과목 1지망</label>
+            <div class="col-md-8">
+              <input id="Field209" name="Field209" type="text" class="form-control input-md" placeholder="회화, 토익, 맞춤, 유학, 출강 중 선택하세요" spellcheck="false" />
+            </div>
+          </div>
+
+          <!-- Text input program2 -->
+          <div id="foli210" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title210" for="Field210">희망 과목 2지망</label>
+            <div class="col-md-8">
+              <input id="Field210" name="Field210" type="text" class="form-control input-md" placeholder="회화, 토익, 맞춤, 유학, 출강 중 선택하세요" spellcheck="false" />
+            </div>
+          </div>
+
+          <!-- Radio Time -->
+          <div id="foli205" class="form-group notranslate">
+            <label for="Field205" id="title205" class="col-md-3 control-label desc">강의 가능한 시간</label>
+            <div class="col-md-8">
+              <fieldset>
+
+                <div class="radio-inline">
+                  <label class="choice" for="Field205_0">
+                    <input name="Field205" id="Field205_0" type="radio" value="평일" checked="checked" /><span>평일</span>
+                  </label>
+                </div>
+
+                <div class="radio-inline">
+                  <label class="choice" for="Field205_1">
+                    <input name="Field205" id="Field205_1" type="radio" value="주말" /><span>주말</span>
+                  </label>
+                </div>
+
+                <div class="radio-inline">
+                  <label class="choice" for="Field205_2">
+                    <input name="Field205" id="Field205_2" type="radio" value="평일/주말 모두 가능" /><span>평일/주말 모두 가능</span>
+                  </label>
+                </div>
+
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- Text Area1 -->
+          <div id="foli204" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title204" for="Field204">본인소개</label>
+            <div class="col-md-8">
+              <textarea id="Field204" name="Field204" class="form-control" spellcheck="true" rows="8"></textarea>
+            </div>
+          </div>
+
+          <!-- Text Area2 -->
+          <div id="foli211" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title211" for="Field211">학력 및 경력사항</label>
+            <div class="col-md-8">
+              <textarea id="Field211" name="Field211" class="form-control" spellcheck="true" rows="8"></textarea>
+            </div>
+          </div>
+
+          <!-- Text Area3 -->
+          <div id="foli212" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title212" for="Field212">특기사항</label>
+            <div class="col-md-8">
+              <textarea id="Field212" name="Field212" class="form-control" spellcheck="true" rows="8"></textarea>
+            </div>
+          </div>
+
+          <!-- Text Area4 -->
+          <div id="foli214" class="form-group notranslate">
+            <label class="col-md-3 control-label desc" id="title214" for="Field214">기타 / 건의사항</label>
+            <div class="col-md-8">
+              <textarea id="Field214" name="Field214" class="form-control" spellcheck="true" rows="8"></textarea>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="saveForm"></label>
+            <div class="col-md-8">
+              <input id="saveForm" name="saveForm" class="btTxt submit btn btn-primary" type="submit" value="보내기" />
+            </div>
+          </div>
+
+
+          <li class="hide">
+            <label for="comment">Do Not Fill This Out</label>
+            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+            <input type="hidden" id="idstamp" name="idstamp" value="0QuUlC6zAuBs/k+eqU25voW2PpbmwMOCXh7bN7HYDd8=" />
+          </li>
+          </ul>
+        </form>
+
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

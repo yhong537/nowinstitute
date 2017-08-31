@@ -1,0 +1,58 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+
+    <!-- Main -->
+    <main class="main col-md-12" role="main">
+      <article class="{{post_class}}">
+
+        <section class="post-content">
+
+
+          <h2>강의 스케쥴</h2>
+
+          <div class="row">
+
+            <div class="col-sm-12 schedule table-box" id="accordion" role="tablist" aria-multiselectable="true">
+             {{content}}
+            </div>
+            <!-- /.schedule-->
+
+          </div>
+          <!-- /.row -->
+
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

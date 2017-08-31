@@ -1,0 +1,62 @@
+<div id="myCarousel" class="carousel slide carousel-fade container">
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner row" role="listbox">
+
+    <a href="{{@blog.url}}/program-conversation" class="item active">
+      <div class="carousel-image col-sm-6">
+        <img class="img-responsive" src="{{asset "img/slider-01.jpg"}}">
+      </div>
+      <div class="carousel-content col-sm-6">
+        <h2>실용적인 실생활 영어회화</h2>
+        <p>영어는 실전! 경험에 기반한 접근 방식과 다년간의 통계를 바탕으로 실용적이고 체계적인 커리큘럼을 제공합니다. 지금 바로 나우만의 특별한 특강을 경험해 보세요.</p>
+        <div class="btn btn-primary">더보기 <i class="fa fa-chevron-right"></i></div>
+      </div>
+    </a>
+
+    <a href="{{@blog.url}}/program-custom" class="item">
+      <div class="carousel-image col-sm-6">
+        <img class="img-responsive" src="{{asset "img/slider-02.jpg"}}">
+      </div>
+      <div class="carousel-content col-sm-6">
+        <h2>재미있는 영어, 최고의 집중도와 효과</h2>
+        <p>영어를 재미있게 배워볼까요? 내게 꼭 맞는 맞춤형 프로그램은 빠른 효과와 집중도 향상을 제공합니다.</p>
+        <div class="btn btn-primary">더보기 <i class="fa fa-chevron-right"></i></div>
+      </div>
+    </a>
+
+    <a href="{{@blog.url}}/program-lecture" class="item">
+      <div class="carousel-image col-sm-6">
+        <img class="img-responsive" src="{{asset "img/slider-03.jpg"}}">
+      </div>
+      <div class="carousel-content col-sm-6">
+        <h2>업무에 도움이 되는 실무영어 워크샵</h2>
+        <p>기업 및 단체를 위해 다양한 방법으로 제공되는 출강 영어교육프로그램입니다.</p>
+        <div class="btn btn-primary">더보기 <i class="fa fa-chevron-right"></i></div>
+      </div>
+    </a>
+
+  </div><!-- /.carousel-inner -->
+</div><!-- /.carousel -->
+
+
+<div class="container-fluid carousel-control-box">
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="icon-prev" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><!-- /.carousel-control-box -->
+
+
+<!-- Mobile scroll box -->
+<a href="#welcome" class="smooth-scroll"><i class="fa fa-chevron-down bounce"></i></a>

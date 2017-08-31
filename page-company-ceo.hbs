@@ -1,0 +1,71 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+
+  {{> submenu-company}}
+
+
+    <!-- Main -->
+    <main class="main col-md-10 sidebar-left" role="main">
+      <article class="{{post_class}}">
+
+        <section class="post-content">
+
+
+          <div class="page-header">
+            <h2>영어 회화가 어려우신가요?</h2>
+            <blockquote>영어 회화는 왜 어려울까요?<br>원어민 수업을 들어도 영어 실력이 늘지 않아 고민이신가요?<br>회화 공부를 뻔한 문법 위주의 책으로 하는 이유는 무엇일까요?</blockquote>
+          </div>
+
+
+          <p>대부분의 영어교육 기관 및 어학원들은 성인을 위한 단계적인 수업 방식과 차별화된 커리큘럼을 가지고 있지 않습니다. 일반 서적이나 원어민들과의 대화로 획일화된 수업을 기초라 이야기합니다.</p>
+
+          <p>영어의 기본적인 이해 및 어휘 교육 없이는 따라가기 벅찬 중급이상의 수업을 듣는다 해도 결국 교재나 대화의 주제가 바뀔뿐 근본적인 방식이 바뀌지는 않습니다.</p>
+
+          <p>나우 어학원은 전문 영어교육회사 Variability Group에서 운영되고 있는 성인 전문 어학원으로써 해외의 1.5세대 및 2세대들이 경험했던 영어에 대한 접근 방식과 다년간의 리서치, 통계를 바탕으로 보다 실용적이고 체계적인 커리큘럼을 제공합니다.</p>
+
+          <p>또한 딱딱한 수업방식에서 벗어나 안락하고 편리한 환경을 제공하고, 다양한 액티비티를 통해 여러분 스스로가 오고 싶은 학원을 만들기 위해 최선을 다 하고 있습니다.</p>
+
+          <p>앞으로도 초심을 잃지 않고 여러분들의 영어 공부를 위해 최선을 다하는 나우 어학원이 되겠습니다.</p>
+
+          <p>감사합니다.</p>
+
+          <p class="ceo-name">Chloe Han <small>CEO</small></p>
+          <img src="{{asset "img/img-ceo-signature.png"}}" style="width:130px;height:116px;">
+
+
+        </section>
+
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

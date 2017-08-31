@@ -1,0 +1,247 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+
+  <main class="main col-sm-12" role="main">
+    <article class="{{post_class}}">
+
+      <section class="post-content">
+
+
+        <!-- Form Name -->
+        <div class="page-header">
+          <h2>문의하기</h2>
+          <blockquote>궁금하신 점을 등록해주시면 답변해드립니다.</blockquote>
+          <br />
+          <p class="text-center">빠른 답변을 원하시면 (031) 611 0100로 연락해 주세요.<br />
+            <small>*필수입력 항목입니다. 반드시 기재해 주시기 바랍니다.</small>
+          </p>
+        </div>
+
+
+
+        <div class="row contact-form">
+
+          <form id="form1" name="form1" class="form-horizontal col-sm-12 wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://nowinstitute.wufoo.com/forms/z72b8qx074kycv/#public">
+
+
+            <!-- Text input Name -->
+            <div id="foli1" class="form-group notranslate">
+              <label class="col-md-3 control-label desc" id="title1" for="Field1">이름<span class="req">*</span></label>
+              <div class="col-md-8">
+                <input id="Field1" name="Field1" type="text" class="form-control input-md" placeholder="" required />
+              </div>
+            </div>
+
+            <!-- Text input Email -->
+            <div id="foli2" class="form-group notranslate">
+              <label class="col-md-3 control-label desc" id="title2" for="Field2">이메일 주소<span class="req">*</span></label>
+              <div class="col-md-8">
+                <input id="Field2" name="Field2" type="email" class="form-control input-md" placeholder="" spellcheck="false" required />
+              </div>
+            </div>
+
+            <!-- Text input Phone -->
+            <div id="foli3" class="form-group notranslate">
+              <label class="col-md-3 control-label desc" id="title3" for="Field3">전화번호<span class="req">*</span></label>
+              <div class="col-md-8">
+                <input id="Field3" name="Field3" type="tel" class="form-control input-md" placeholder="" spellcheck="false" required />
+              </div>
+            </div>
+
+            <!-- Radio Programs -->
+            <div id="foli205" class="form-group notranslate">
+              <label for="Field205" id="title205" class="col-md-3 control-label desc">문의분야</label>
+              <div class="col-md-8">
+                <fieldset>
+
+                <div class="radio">
+                  <label class="choice" for="Field205_0">
+                    <input name="Field205" id="Field205_0" type="radio" value="프로그램 문의" checked="checked"/><span>프로그램 문의</span>
+                  </label>
+                </div>
+
+                <div class="radio">
+                  <label class="choice" for="Field205_1">
+                    <input name="Field205" id="Field205_1" type="radio" value="출강신청 안내"/><span>출강신청 안내</span>
+                  </label>
+                </div>
+
+                <div class="radio">
+                  <label class="choice" for="Field205_2">
+                    <input name="Field205" id="Field205_2" type="radio" value="개별상담 신청"/><span>개별상담 신청</span>
+                  </label>
+                </div>
+
+                 <div class="radio">
+                  <label class="choice" for="Field205_3">
+                    <input name="Field205" id="Field205_3" type="radio" value="결제 및 서포트 관련"/><span>결제 및 서포트 관련</span>
+                  </label>
+                </div>
+
+                <div class="radio">
+                  <label class="choice" for="Field205_4" onmouseup="document.getElementById('Field205_other').focus();"/>
+                    <input name="Field205" id="Field205_4" type="radio" value="기타" onmouseup="document.getElementById('Field205_other').focus();"/><span>기타 </span>
+                    <input id="Field205_other" name="Field205_other_기타" type="text" class="field text other" value="" onclick="document.getElementById('Field205_4').checked = 'checked';" tabindex="9" />
+                  </label>
+                </div>
+              </fieldset>
+              </div>
+            </div>
+
+
+            <!-- Radio Enrolled -->
+            <div id="foli207" class="form-group notranslate">
+              <label for="Field207" id="title207" class="col-md-3 control-label desc">나우 어학원에서 수강중이시면 체크해 주세요</label>
+              <div class="col-md-8">
+                <fieldset>
+                <div class="radio-inline">
+                  <label class="choice" for="Field207_0">
+                    <input name="Field207" id="Field207_0" type="radio" value="수강중입니다" checked="checked"/><span>수강중입니다</span>
+                  </label>
+                </div>
+
+                <div class="radio-inline">
+                  <label class="choice" for="Field207_1">
+                    <input name="Field207" id="Field207_1" type="radio" value="아니오" tabindex="11"/> <span>아니오</span>
+                  </label>
+                </div>
+
+              </fieldset>
+              </div>
+            </div>
+
+
+            <!-- Text Area -->
+            <div id="foli204" class="form-group notranslate">
+              <label class="col-md-3 control-label desc" id="title204" for="Field204">문의내용<span class="req">*</span></label>
+              <div class="col-md-8">
+                <textarea id="Field204" name="Field204" class="form-control" spellcheck="true" rows="8" required></textarea>
+              </div>
+            </div>
+
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="saveForm"></label>
+              <div class="col-md-8">
+                <input id="saveForm" name="saveForm" class="btTxt submit btn btn-primary" type="submit" value="보내기" />
+              </div>
+            </div>
+
+
+            <li class="hide">
+              <label for="comment">Do Not Fill This Out</label>
+              <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+              <input type="hidden" id="idstamp" name="idstamp" value="qbXQeL6bxLu/SKLCKuXFnuF1nkgQKoVQfdMBSYGE8O0=" />
+            </li>
+
+          </form>
+
+
+          <!-- Sidebar Right
+          <aside role="complementary" class="col-sm-3 sidebar">
+            <div class="apply-widget panel panel-default">
+              <dl class="panel-body">
+                <dt>고객 상담 및 접수 안내:</dt>
+                <dd>031 611 0100</dd>
+                <dt>결제 안내:</dt>
+                <dd>무통장 입금계좌</dd>
+              </dl>
+            </div>
+            <a class="btn btn-block btn-lg btn-danger find-program-widget" href="/program-conversation/"><i class="fa fa-arrow-right"></i> 강의 찾기</a>
+          </aside>-->
+
+
+        </div><!-- /.contact-form -->
+
+
+
+          <hr>
+
+
+
+
+        <header id="header" class="page-header">
+          <h2>찾아오시는 길</h2>
+        </header>
+
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <p>경기도 평택시 송탄로 268 <br>
+                지번주소: 경기도 평택시 서정동 822-8 2층 <br>
+                영문 주소: 268, Songtan-ro, Pyeongtaek-si, Gyeonggi-do, Korea <br>
+                우편번호: 17774</p>
+
+                <p>TEL: 031 611 0100 <br>
+                  FAX: 031 611 0151</p>
+                </div>
+
+                <div class="col-sm-6 map">
+
+                  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                  <div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:600px;'></div>
+                  <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+                  <a href='http://www.maps-generator.com'>http://Maps-Generator.com</a> <script type='text/javascript' src='http://embedmaps.com/google-maps-authorization/script.js?id=3ea1a3c8b77a848dfeb0489a9191944bbdbd57b5'></script><script type='text/javascript'> function init_map(){
+                    var myOptions = {
+                      zoom:17,center:new google.maps.LatLng(37.06849525168336,127.05910024232789),
+                      mapTypeId: google.maps.MapTypeId.ROADMAP};
+                      map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                      marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.06779327066809,127.0591217)});
+                      infowindow = new google.maps.InfoWindow({
+                        content:'<strong>나우어학원</strong><br>'+
+                        '경기도 평택시 송탄로 268<br>'+
+                        '[지번] 경기도 평택시 서정동 822-8 2층<br>'+
+                        '031-611-0100<br>'+
+                        '<a href="http://map.naver.com/?elat=37.0677453&elng=127.0590958&eText=%EB%82%98%EC%9A%B0%EC%96%B4%ED%95%99%EC%9B%90&edid=34346586">> 찾아오는 길</a>'
+                      });
+                      google.maps.event.addListener(marker, 'click', function(){
+                        infowindow.open(map,marker);
+                      });
+                      infowindow.open(map,marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                  </script>
+
+                </div>
+
+              </div>
+
+
+
+      </section>
+
+    </article>
+  </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

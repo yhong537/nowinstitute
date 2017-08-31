@@ -1,0 +1,124 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+  {{> submenu-program}}
+
+    <!-- Main -->
+    <main class="main col-md-10 sidebar-left" role="main">
+      <article class="{{post_class}}">
+
+        <section id="program-study-abroad" class="post-content program-study-abroad">
+
+
+        <div class="page-header">
+          <h2>유학을 준비하는 분들을 위한 Tip!</h2>
+        </div>
+
+
+          <div class="section-block about-section-welcome row">
+            <div class="col-sm-7">
+              <h3 class="section-title">어학연수</h3>
+              <p>많은 사람들이 어학연수에 따른 높은 결과를 기대하지만, 어학연수라는 것은 대부분 영어를 많이 배우기 보다는 영어에 많이 노출이 되어 “자연스러워” 지는 것입니다. 그러므로 연수를 가기 전 영어를 받아드릴 수 있는 최소한의 수준을 만들어 놓는 것이 중요합니다. 무턱대고 “가면 늘겠지” 하다간 비효율적으로 시간과 돈을 낭비 할 수 있습니다.</p>
+
+              <a class="btn btn-default" href="/support/"><i class="fa fa-chevron-right"></i> 상담하기</a>
+            </div>
+            <div class="col-sm-4 col-sm-offset-1">
+              <img src="{{asset "img/img-study-abroad1.jpg"}}">
+            </div>
+          </div><!-- /.row -->
+
+
+
+          <hr>
+
+          <div class="section-block about-section-curriculum row">
+            <div class="col-sm-4">
+              <img src="{{asset "img/img-study-abroad2.jpg"}}">
+            </div>
+            <div class="col-sm-7 col-sm-offset-1">
+              <h3 class="section-title">대학유학</h3>
+              <p>외국으로 대학을 가기 전 잘못된 준비는 “쓰기” 와 “읽기” 에만 집중이 되는 것 입니다. 대부분의 대학 강의들은 교과서의 중심이 아닌 교수님들의 “말”이 중심이 되어 이루어 지고, 그룹과제 및 강의들의 참여도, 교수님들과의 커뮤니케이션을 위해서는 “듣기”와 “말하기”까지 겸비 되어야 합니다.</p>
+              <a class="btn btn-default" href="/support/"><i class="fa fa-chevron-right"></i> 상담하기</a>
+            </div>
+          </div><!-- /.row -->
+
+
+
+        <hr>
+
+        <h2>유학 추천 강의 <small>Studying Abroad Preparation Classes</small></h2>
+
+        <div class="table-box">
+          <table class="table table-bordered table-hover table-fixedheader">
+
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th>1개월</th>
+                <th>2개월</th>
+                <th>3개월</th>
+                <th>4개월</th>
+                <th>5개월</th>
+                <th>6개월</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th>1교시</th>
+                <td>문법회화 I</td>
+                <td>문법회화 II</td>
+                <td>문법회화 II</td>
+                <td>일상회화 I</td>
+                <td>일상회화 I</td>
+                <td>일상회화 II</td>
+              </tr>
+
+              <tr>
+                <th>2교시</th>
+                <td>문법회화 I</td>
+                <td>패턴영어 I</td>
+                <td>패턴영어 I</td>
+                <td>패턴영어 II</td>
+                <td>베이직토픽</td>
+                <td>베이직토픽</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.table-box -->
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+
+

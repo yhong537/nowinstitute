@@ -1,0 +1,118 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+
+  {{> submenu-company}}
+
+
+    <!-- Main -->
+    <main class="main col-md-10 sidebar-left" role="main">
+      <article class="{{post_class}}">
+
+        <section class="post-content about-company">
+
+
+          <div class="page-header">
+            <h2>나우 어학원에 오신 것을 환영합니다!</h2>
+            <blockquote>나우 어학원은 "Now or When"의 줄임 말로 <br> <span>"지금 당장 시작하라"</span> 라는 뜻을 가지고 있습니다.</blockquote>
+          </div>
+
+
+          <div class="section-block about-section-welcome row">
+            <div class="col-sm-7">
+              <h3>직장인&성인 전문 영어 어학원</h3>
+              <p>특별한 왕도가 없는 영어회화, 아직도 판에 박힌 교재로 수업하고, 인증되지 않은 동네 과외 선생님에게, 혹은 초,중생들이 뛰어 노는 곳에서 수업을 하고 계십니까?</p><p>저희 Now 어학원은 자체개발 커리큘럼과 수업방식으로 이미 여러 기업과 학교에서 활동하고 있는 성인 전문 영어 어학원 입니다.</p>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+              <img src="{{asset "img/img-about-welcome.jpg"}}">
+            </div>
+          </div><!-- /.row -->
+
+          <hr>
+
+          <div class="section-block about-section-curriculum row">
+            <div class="col-sm-4">
+              <img src="{{asset "img/img-about-curriculum.png"}}">
+            </div>
+            <div class="col-sm-7 col-md-offset-1">
+              <h3>실전 영어에 최적화된 체계적인 커리큘럼</h3>
+              <p>현재 모든 커리큘럼 및 교재는 자체 개발로 시중에서 구하실 수 없으며 강의에 따라 소규모의 정원으로 이루어져 효과적인 강의에 최적화 되어 있습니다.</p><p>또한 일반적으로 컨텐츠의 질 보다는 강사 재량에 따라 강의의 질이 판단되는 경우가 많아 커리큘럼뿐만 아니라 강의 진행 매뉴얼을 통해 모든 강사들이 일관된 강의와 평가를 하게 됩니다.</p>
+            </div>
+          </div><!-- /.row -->
+
+          <hr>
+
+          <div class="section-block about-section-history row">
+            <div class="col-md-12">
+            <h2>학원연혁 <small>Company History</small></h2>
+            <ul class="section-history">
+              <li class="section-history-list">
+                <b>2006</b>
+                <div class="desc">
+                  <h4>영어교육을 위한<br>자체 컬리큘럼 개발</h4>
+                  <p>회화로 문법을 배울 수 있는 문법회화 I,II 산수처럼 배우는 공식패턴 I,II 등 한국 성인들을 위한 교육 콘텐트와 진행 방식 개발</p>
+                </div>
+              </li>
+
+              <li class="section-history-list">
+                <b>2009</b>
+                 <div class="desc">
+                  <h4>Variability Group<br>설립</h4>
+                  <p>Private English Educational Group 으로 고객의 Needs을 파악하여 커리큘럼을 개발 및 편집하여 강의 및 평가 진행</p>
+                </div>
+              </li>
+
+              <li class="section-history-list">
+                <b>2011</b>
+                <div class="desc">
+                  <h4>Systematic Education<br>& Evaluation Manual</h4>
+                  <p>체계적이고 단계적인 커리큘럼과 모든 강사들의 일관된 강의와 평가를 위해 진행 매뉴얼</p>
+                </div>
+              </li>
+
+              <li class="section-history-list active">
+                <b>2013</b>
+                <div class="desc">
+                  <h4>Now Language Institute<br>설립</h4>
+                  <p>고객들의 요청으로 한국 사업자를 갖은 어학원을 개강 현재 9 종류의 회화수업과, 총 13가지의 영어 수업을 진행 중</p>
+                </div>
+              </li>
+            </ul>
+            </div><!-- /.col-md-12 -->
+          </div><!-- /.row -->
+
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

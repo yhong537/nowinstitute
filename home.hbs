@@ -1,0 +1,229 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+
+{{! Jumbotron }}
+<section class="jumbotron main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}" data-type="background" data-speed="10">
+
+  {{> carousel}}
+
+</section><!-- /.jumbotron -->
+
+{{! Contents }}
+<div class="content">
+
+
+<!-- Section: welcome -->
+  <section id="welcome" class="welcome">
+
+    <div class="container">
+    <div class="row">
+
+      <div class="col-md-8 col-sm-12">
+        <h2>나우 어학원에 오신것을 환영합니다!</h2>
+        <p class="lead">자체개발 커리큘럼 성인 전문 영어 회화</p>
+
+        <p>특별한 왕도가 없는 영어회화. 아직도 판에 박힌 교재로 수업하고, 인증되지 않은 곳에서 수업을 하고 계십니까? Now 어학원은 자체개발 커리큘럼과 수업방식으로 이미 여러 기업과 학교에서 활동하고 있는 성인 전문 영어 어학원 입니다. 지금 바로 문의하세요, 친절하게 상담해 드립니다.</p>
+
+        <a href="/company-ceo" class="btn btn-info">학원정보 보기 <i class="fa fa-chevron-right"></i></a>
+        <a href="#program" class="btn btn-default smooth-scroll">프로그램 보기 <i class="fa fa-chevron-right"></i></a>
+      </div>
+
+      <div class="col-md-4 hidden-sm">
+        <img src="{{asset "img/img-welcome.jpg"}}">
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+<!-- Section: lectures -->
+  <section id="program" class="program parallax" data-type="background" data-speed="10"><!-- parallax BG -->
+
+    <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12">
+        <div class="page-header">
+          <h2>강의안내</h2>
+          <p class="lead">여러분의 다양한 학습 목적을 충족시키는 수준 높고 체계적인 영어 강좌를 제공합니다.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6 section-box section-box1">
+        <a href="/program-conversation/">
+          <div class="section-box-img">
+            <img src="{{asset "img/img-program-conversation.jpg"}}">
+          </div>
+          <div class="section-box-content">
+            <h3>회화 프로그램</h3>
+            <p>소규모 인원, 12가지 다양한 커리큘럼으로 구성된 전문 고급회화 프로그램</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-xs-6 section-box section-box1">
+        <a href="/program-toeic">
+          <div class="section-box-img">
+            <img src="{{asset "img/img-program-toeic.jpg"}}">
+          </div>
+          <div class="section-box-content">
+            <h3>토익 프로그램</h3>
+            <p>클래스가 다른 토익 강좌로 실전 스피킹 & 라이팅 완전정복 프로그램</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-xs-6 section-box section-box1">
+        <a href="/program-custom">
+          <div class="section-box-img">
+            <img src="{{asset "img/img-program-custom.jpg"}}">
+          </div>
+          <div class="section-box-content">
+            <h3>맞춤 프로그램</h3>
+            <p>개인별 상황과 목표, 성격을 파악하는 컨설팅을 실시하여 진행되는 맞춤형 강의 프로그램</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-xs-6 section-box section-box1">
+        <a href="/program-study-abroad">
+          <div class="section-box-img">
+            <img src="{{asset "img/img-program-overseas-study.jpg"}}">
+          </div>
+          <div class="section-box-content">
+            <h3>유학 프로그램</h3>
+            <p>새로운 경험과 커리어를 위해 유학을 준비하는 이들을 위한 공신력 있는 최신 정보 제공</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-xs-6 section-box section-box1">
+        <a href="program-lecture">
+          <div class="section-box-img">
+            <img src="{{asset "img/img-program-lecture.jpg"}}">
+          </div>
+          <div class="section-box-content">
+            <h3>출강 프로그램</h3>
+            <p>글로벌 시대를 맞이하여 효과적인 비즈니스 영어를 마스터하는 기업형 교육 프로그램</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-xs-6 section-box section-box1">
+        <a href="/consultation">
+          <div class="section-box-img">
+            <img src="{{asset "img/img-program-apply.jpg"}}">
+          </div>
+          <div class="section-box-content">
+            <h3>수강 상담 및 신청안내</h3>
+            <p>수강에 대한 궁금증을 상담해 드립니다<br>지금 바로 신청하세요</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+<!-- Section: news -->
+  <section id="news-list" class="frontpage-news">
+
+    <div class="container">
+    <div class="row">
+
+
+      <div class="col-sm-12">
+        <div class="page-header">
+          <h2>공지사항</h2>
+          <p class="lead">새로운 프로그램, 학원 뉴스 및 이벤트 안내</p>
+        </div>
+      </div>
+
+
+      {{#foreach posts}}
+        {{#has tag="notice"}}
+
+          <article class="col-sm-5bx col-xs-4">
+
+            <a href="{{url}}">
+ <!--         <div class="tag-box">{{tags prefix=" &middot; "}}</div> -->
+
+              <div class="thumbnail-placeholder">{{#if image}}
+                <img class="thumbnail" src="{{image}}">{{else}}
+                <img class="thumbnail" src="{{asset "img/img-placeholder.png"}}">{{/if}}
+              </div>
+
+              <h4>{{{title}}}</h4>
+
+<!--               <p class="post-meta">
+                {{excerpt words="8"}}
+              </p> -->
+            </a>
+
+          </article>
+
+        {{/has}}
+      {{/foreach}}
+
+      <div class="col-sm-12 read-more-box">
+        <a class="read-more" href="./tag/notice/">더보기 <i class="fa fa-chevron-right"></i></a>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+<!-- Section: User guide -->
+  <section id="user-guide" class="user-guide-section parallax" data-type="background" data-speed="10"><!-- parallax BG -->
+
+    <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12">
+        <div class="page-header">
+          <h2>수강안내</h2>
+          <p class="lead">새로운 프로그램, 학원 뉴스 및 이벤트 안내</p>
+        </div>
+      </div>
+
+      <div class="col-xs-4 faq">
+        <a href="/consultation/">
+          <i class="fa fa-list-alt"></i>
+          <h3>FAQ</h3>
+        </a>
+      </div>
+
+      <div class="col-xs-4 schedule">
+        <a href="/program-schedule/">
+          <i class="fa fa-calendar-check-o"></i>
+          <h3>강의 스케줄</h3>
+        </a>
+      </div>
+
+      <div class="col-xs-4 ask">
+        <a href="/support/">
+          <i class="fa fa-comments-o"></i>
+          <h3>문의하기</h3>
+        </a>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+</div><!-- /.container -->
+
+
+
+
+

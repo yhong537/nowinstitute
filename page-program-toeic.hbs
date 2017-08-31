@@ -1,0 +1,141 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+  {{> submenu-program}}
+
+    <!-- Main -->
+    <main class="main col-md-10 sidebar-left" role="main">
+      <article class="{{post_class}}">
+
+        <section class="post-content">
+
+
+          <div class="page-header">
+            <h2>토익도 쉽게 쉽게!</h2>
+            <blockquote>중급자들의 고득점 향상을 위한 새로운 토익 프로그램 </blockquote>
+          </div>
+
+
+          <div class="row">
+            <div class=" col-sm-12">
+              <h3>정규기초 400점대 또는 그 이하</h3>
+
+              <h4>강의목표</h4>
+              <ul>
+                <li>두 달 안에 500점-500점 달성</li>
+              </ul>
+
+              <h4>강의내용</h4>
+              <ul>
+                <li>LC 각 파트의 핵심 어휘와 빈출 표현 학습으로 리스닝의 기초를 잡습니다. </li>
+                <li>LC 각 파트의 여러가지 발음과 연음 규칙등을 익혀 시험에 대비합니다.</li>
+                <li>RC 파트를 위한 기초적이고 필수적인 문법을 정리하고, 중요 문법사항들을 문제에 적용하는 연습을 합니다.</li>
+                <li>RC  Part7에서는 자주 나오는 문제유형과 어휘를 학습하여 정답을 찾는 방법을 배웁니다.</li>
+              </ul>
+
+              <h4>강의대상</h4>
+              <ul>
+                <li>토익 공부를 처음 시작하시는 입문자</li>
+              </ul>
+            </div><!-- /.col-sm-12 -->
+          </div><!-- /.row -->
+
+
+  <hr>
+
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>정규시작 500점-600점 대</h3>
+
+              <h4>강의목표</h4>
+              <ul>
+                <li>700점 이상을 목표로 합니다</li>
+                <li>토익 시험의 유형을 파악합니다</li>
+                <li>문장의 구조를 파악하여 분석 할 수 있으며, 문법사항을 문제에 적용할 수 있습니다.</li>
+                <li>Part7의 빈줄 단어를 마스터하고 문제가 묻는 요지를 정확히 파악할 수 있습니다.</li>
+                <li>LC 파트의 빈출 표현과 빈출 유형을 확실히 파악합니다.</li>
+              </ul>
+
+              <h4>강의내용</h4>
+              <ul>
+                <li>LC 각 파트의 핵심어휘와 빈출표현 학습으로 리스닝의 기초를 잡습니다.</li>
+                <li>LC 파트의 여러가지 발음과 연음규칙 등을 익혀 시험에 대비합니다.</li>
+                <li>RC 파트를 위한 기초적이고 칠수적인 문법을 정리하고, 중요 문법사항들을 문제에 적용하는 연습을 합니다.</li>
+                <li>RC Part7에서는 자주 나오는 문제유형과 어휘를 학습하여 정답을 찾는 방법을 배웁니다.</li>
+              </ul>
+
+              <h4>강의대상</h4>
+              <ul>
+                <li>영어 기본기를 알고 있으며, 저녁 시간대를 활용해 공부하고자 하는 대학생 혹은 직장인</li>
+              </ul>
+            </div><!-- /.col-sm-12 -->
+          </div><!-- /.row -->
+
+
+  <hr>
+
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>정규실전 650점-750점 대</h3>
+
+              <h4>강의목표</h4>
+              <ul>
+                <li>한 달 안에 850점 이상 달성</li>
+                <li>다양하고 반복적인 발음 및 연음 등을 학습해 듣기 실력을 집중보완 합니다.</li>
+                <li>빈출 어휘와 문법사항들을 확실하게 익혀 문제를 분석하고 적용할 수 있는 능력을 기릅니다.</li>
+                <li>확실한 개념정리를 통한 문제풀이, 출제자의 의도를 파악한 정답 공략하기로 200점 이상을 향상시킬 수 있습니다. </li>
+              </ul>
+
+              <h4>강의내용</h4>
+              <ul>
+                <li>토익에 나오는 빈출표현과 어휘를 문장들 속에서 살펴보고 동의어와 유의어를 포함한 토익 LC 필수어휘들을 학습합니다.</li>
+                <li>기본적으로 반드시 알아야 하는 필수 문법을 정리합니다.</li>
+                <li>토익 유형 분석으로 여러가지 문제를 접해 봄으로써 실전문제에 문법을 적용해보는 훈련을 합니다.</li>
+                <li>Part7의 빈출어휘와 표현들을 확실하게 마스터 합니다.</li>
+                </ul>
+
+              <h4>강의대상</h4>
+              <ul>
+                <li>650점 이상의 토익 중급자 저녁 시간대를 활용해 공부하고자 하는 대학생 혹은 직장인</li>
+              </ul>
+            </div><!-- /.col-sm-12 -->
+          </div><!-- /.row -->
+
+
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

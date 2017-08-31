@@ -1,0 +1,59 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+  {{> submenu-program}}
+
+    <!-- Main -->
+    <main class="main col-md-10 sidebar-left" role="main">
+      <article class="{{post_class}}">
+
+        <section id="program-custom" class="post-content">
+
+          <div class="page-header">
+            <h2>최고의 집중도와 효과!</h2>
+            <blockquote>나우 어학원에서는 여러분의 상황에 꼭 맞는 최적의 강의를 제공합니다</blockquote>
+          </div>
+
+          <p>의뢰자의 상황과 목표, 성격을 컨설팅 하여 맞춤으로 진행되는 강의입니다. 모든 커리큘럼과 교재, 진행방식은 의뢰자에 맞게 구성 및 개발되며 수업 일 수와 인원을 편의에 맞게 구성 하실 수 있습니다.</p><p>이 프로그램을 신청하시는 분들의 예로는, 승진 대상 회사원, 유학 준비생, 취업 준비생, 회사 임원, 영어 인터뷰를 앞두신 분, 강사 및 선생님 등등 좀더 많은 집중과 주목을 요하시는 분들이 신청해 주십니다.</p>
+
+          <ul class="program-custom-list">
+            <li class="list-1"><i class="fa fa-search-plus"></i> 1. 성향 및 니즈 파악</li>
+            <li class="list-2"><i class="fa fa-object-group"></i> 2. 커리큘럼 개발 및 구성</li>
+            <li class="list-3"><i class="fa fa-commenting-o"></i> 3. 강의 및 주기적인 평가</li>
+            <li class="list-4"><i class="fa fa-line-chart"></i> 4. 피드백을 통한 개선</li>
+          </ul>
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

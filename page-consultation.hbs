@@ -1,0 +1,214 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+
+    <!-- Main -->
+    <main class="main col-md-12" role="main">
+      <article class="{{post_class}}">
+
+        <section class="post-content">
+
+
+          <h2>자주 묻는 질문</h2>
+
+          <div class="row">
+
+            <div class="col-sm-9 faq panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading1"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1"> 학원 이용 가능시간은 어떻게 되나요? </a> </h4>
+                </div>
+
+                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+
+                  <div class="panel-body"> 주중 4:00~12:00 주말(토,일)은 휴무입니다(특강 시 오픈).
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading2"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2"> 수강 신청은 어떻게 하나요? </a> </h4>
+                </div>
+
+                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+
+                  <div class="panel-body"> 수강신청은 등록서 작성을 위하여 방문 신청을 원칙으로 합니다. 다만 직접 방문하시지 못하는 경우 계좌입금이 가능하며 입금 후 전화를 주시면 수강신청이 완료됩니다. 또한 차후에 있을 강의를 먼저 예약을 하시고 싶으신 분들도 방문하셔서 등록서 작성 및 결제가 완료되어야 예약이 가능 합니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading3"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3"> 개강일이 언제 인가요? </a> </h4>
+                </div>
+
+                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+
+                  <div class="panel-body"> 개강일은 강의일수 및 시간에 따라 달라질 수 있으며, 구체적인 일정은 게시판을 참고 하시기 바랍니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading4"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4"> 차후 수강 시간을 바꿀 수 있나요? </a> </h4>
+                </div>
+
+                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+
+                  <div class="panel-body"> 커리큘럼 1번인 “문법회화”를 제외하고 강의 시간대를 변경 할 수 있습니다. 하지만 특정 요일 대나 시간대에 따라 일정기간 기다리셔야 할 수도 있습니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading5"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5"> 보강이 가능하다고 들었습니다 어떻게 하나요? </a> </h4>
+                </div>
+
+                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+
+                  <div class="panel-body"> 개인적 사유의 지각, 결석은 보강이 불가능하며, 결재 날짜가 연장, 변경 될 수 없습니다 (3개월 이상의 등록자에 사전통보에 한에 결제일은 변경 될 수 있으며 최소 2주에서 최대 1달의 기간을 연장 할 수 있습니다. 하지만 환불에 적용되지 않습니다). 하지만 담당 강사의 판단하의, 혹은 어학원의 승인에 따른 개인 및 그룹 보강은 가능합니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading6"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6"> 출강의 기간은 어떻게 되나요? </a> </h4>
+                </div>
+
+                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+
+                  <div class="panel-body"> 전화 및 방문상담 후 이루어 지며 방문상담은 예약바랍니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading7"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7"> 컨텐츠 제작은 어떻게 하나요? </a> </h4>
+                </div>
+
+                <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+
+                  <div class="panel-body"> 전화 및 방문상담 후 이루어 지며 방문상담은 예약바랍니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading8"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8"> 1:1이나 소규모 수업은 어떻게 하나요? </a> </h4>
+                </div>
+
+                <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+
+                  <div class="panel-body"> 전화 및 방문상담 후 이루어 지며 방문상담은 예약바랍니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading9"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9"> 엑티비티 등록은 어떻게 하나요? </a> </h4>
+                </div>
+
+                <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+
+                  <div class="panel-body"> 매 월말 어학원 입구 공지란을 참고하시기 바랍니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading10"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10"> 환불정책에 대해 알고 싶습니다</a> </h4>
+                </div>
+
+                <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+
+                  <div class="panel-body"> 강의 개시 전에는 전액 환불 가능하며, 이후 학원법에 의거한 환불규정에 따라 환불처리 됩니다 (단, 커리큘럼1 문법회화 같은 정원제 수업일 경우 내부 규정에 의거하여 처리).
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+
+              <div class="panel panel-default">
+
+                <div class="panel-heading" role="tab" id="heading11"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse10"> 결제방법은 어떻게 되나요? </a> </h4>
+                </div>
+
+                <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+
+                  <div class="panel-body"> 현금, 카드, 계좌입금으로 결제 가능하십니다.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel -->
+            </div>
+            <!-- /.faq -->
+
+
+            <!-- Sidebar Right -->
+            <aside role="complementary" class="col-sm-3">
+              <div class="apply-widget panel panel-default">
+                <dl class="panel-body">
+                  <dt>고객 상담 및 접수 안내:</dt>
+                  <dd>031 611 0100</dd>
+                  <!-- <dt>결제 안내:</dt>
+                  <dd>무통장 입금계좌</dd> -->
+                </dl>
+              </div>
+              <a class="btn btn-block btn-lg btn-danger find-program-widget" href="/program-conversation/"><i class="fa fa-arrow-right"></i> 강의 찾기</a>
+              <a class="btn btn-block btn-lg btn-warning find-location-widget" href="/support/"><i class="fa fa-arrow-right"></i> 찾아오시는 길</a>
+            </aside>
+          </div>
+          <!-- /.row -->
+
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+

@@ -1,0 +1,277 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+  attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{! Jumbotron }}
+<div class="jumbotron main-header {{#if image}}" style="background-image: url({{image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 scroll-fade">
+        <h1 class="post-title">{{title}}</h1>
+      </div><!-- /.col-sm-12 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /.jumbotron -->
+
+
+<!-- Article -->
+<div class="content container">
+  <div class="row">
+
+  {{> submenu-program}}
+
+    <!-- Main -->
+    <main class="main col-md-10 sidebar-left" role="main">
+      <article class="{{post_class}}">
+
+        <section class="post-content ">
+
+
+        <div class="page-header">
+          <h2>효율과 효과를 극대화!</h2>
+          <blockquote>대부분의 회화 강의들은 소규모의 인원으로 진행됩니다.<br>체계적인 단계별 학습 시스템은 <span>12가지 다양한 커리큘럼으로</span><br> 구성된 학습플랜에 따라 순환 진행 됩니다.</blockquote>
+        </div>
+
+
+          <hr>
+
+
+          <h2>내 레벨과 강의 찾기 <small>Levels for the Conversation Classes</small></h2>
+
+          <div class="table-box">
+            <table class="table table-bordered table-hover table-fixedheader">
+            <thead>
+              <tr>
+                <th style="width: 8%">레벨</th>
+                <th style="width: 31%">수준</th>
+                <th style="width: 31%">목표</th>
+                <th style="width: 15%">강의</th>
+                <th style="width: 15%">기간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>A</th>
+                <td>영어에 입문하는 초보단계</td>
+                <td>한국어와 영어의 차이를 이해하고 어떻게 영어회화 기초 스피킹을 시작하는지를 익힘 </td>
+                <td>
+                  문법회화 I,II
+                  <br> 회화교정
+                </td>
+                <td>4개월<br>2개월</td>
+              </tr>
+              <tr>
+                <th>B</th>
+                <td>기초적인 단어, 인사말, 표현을 사용하고 이해 할 수 있으며, 문법적 오류가 적으나, 한정적인 표현을 사용하여 초보적인 수준의 대화가 가능한 단계</td>
+                <td>한정된 상황이 아닌 다양한 상황에서 쓰일 수 있는 표현과 방식을 익혀 기본 구사 능력을 확립</td>
+                <td>300 패턴 I</td>
+                <td>레벨당 2개월</td>
+              </tr>
+              <tr>
+                <th>C</th>
+                <td>관심분야나 한정적인 상황에 요구되는 회화는 가능하지만 특정상황의 회화나 표현은 부족한 단계</td>
+                <td>일상/회사 영어를 이루고 있는 다양한 상황상의 대화와 표현을 익혀 가능한 회화 분야와 표현을 넓힘</td>
+                <td>300 패턴 II<br>상황영어 I</td>
+                <td>레벨당 2개월</td>
+              </tr>
+              <tr>
+                <th>D</th>
+                <td>기본적인 상황의 본인 의사나 의견을 이야기 하는 것이 가능하고 줄거리의 요약을 간단하게 할 수 있는 단계</td>
+                <td>새로운 문장 구조와 특정 표현을 익혀 본인의 의견을 구사 능력을 넓힘</td>
+                <td>300 패턴 III<br>상황영어 II<br>기초토픽 I,II</td>
+                <td>레벨당 3개월</td>
+              </tr>
+              <tr>
+                <th>E</th>
+                <td>대부분의 상황이나 주제를 본인의 의견으로 설명할 수 있으며 사람들과 토론이 가능한 단계</td>
+                <td>의견이나 설명 전체의 체계를 잡고 구체적인 설명 구사 능력을 확립</td>
+                <td>상황영어 III<br>토픽토킹 I,II</td>
+                <td>레벨당 3개월</td>
+              </tr>
+              <tr>
+                <th>F</th>
+                <td>유창하게 자신의 의사를 표현하고 현재 이슈가 되고 있는 다양한 주제에 대한 토론과 설득이 가능한 단계</td>
+                <td>교육받은 원어민 수준의 고급 영어 훈련</td>
+                <td>디베이팅</td>
+                <td>6개월+</td>
+              </tr>
+            </tbody>
+            <tbody>
+            </tbody>
+            </table>
+          </div>
+
+
+          <hr>
+
+
+          <h2>회화 강의 리스트 <small>Conversation Classes List</small></h2>
+
+          <div class="row conversation-program-list">
+
+            <div class="col-sm-6">
+              <div class="panel panel1 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>문법회화 I, II</h4>
+                </div>
+                <div class="panel-body"><p>책과 쓰기로 진행되는 강의가 아닌 문법을 회화처럼 듣고 말하며 배우는 수업으로 알파벳만 알아도 쉽게 시작 할 수 있습니다. 짧은 시간 내에 영어의 기초를 다질 수 있으며 기본 회화문법의 80% 정도를 4개월 안에 습득할 수 있습니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel2 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>회화교정</h4>
+                </div>
+                <div class="panel-body"><p>영어를 공부한 시간에 비해 유독 스피킹이 부족하거나 문법적 오류가 많은 분들을 위한 강의로 문장 조합과 단어 조합, 시제교정, 실무영어의 흐름 등을 배울 수 있습니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel3 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>300 패턴영어 I, II, III</h4>
+                </div>
+                <div class="panel-body"><p>통계에 따른 빈도수가 가장 높은 표현들을 엄선하여 대부분의 모든 상황에서 쓰일 수 있는 다양한 형식의 표현을 자체 개발한 공식으로 더하고 빼기처럼 쉽게 배울 수 있습니다. 이 강의는 기본적인 본인의 의사나, 의견을 표현 할 수 있도록 도와주고, 문장력과 표현력에도 많은 도움이 됩니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel4 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>상황영어 (Role-Play) I, II, III</h4>
+                </div>
+                <div class="panel-body"><p>누구나 겪을 수 밖에 없는 특정상황을 가정하여, 대화내용을 바탕으로 여러 가지의 표현들을 배우고 익히게 됩니다. 실전처럼 연습을 하게 되며, 상황에 따라 어떠한 말로 대화를 시작하고 이어나가야 하는 지를 배우게 됩니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel5 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>기초토픽 (Basic Topic) I, II</h4>
+                </div>
+                <div class="panel-body"><p>뉴스나 기사에서 실린 재미있는 사건과 이야기들을 실상 생활에 도움이 될만한 내용인지를 선별 후, 수준별로 재 구성하여 여러 가지의 표현들과 문장구성 및 조합을 배우게 됩니다. 스토리에 대한 내용과 요점을 간추려 이야기 하게 되며 주제에 따른 간단한 본인의 의견이나 견해, 경험들을 질문 받아 이야기 하게 됩니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel6 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>토픽토킹 (Topic Discussion) I, II</h4>
+                </div>
+                <div class="panel-body"><p>시사, 경제, 연예, 일반기사 등 이슈가 되고 있는 사건 사고 또는 사실들을 다루며, 모든 강의는 영어로 진행이 됩니다. 기사에 따른 질문을 받게 되며, 영어 이외에 상식적인 것들도 많이 배울 수 있는 유익한 강의 입니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel7 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>디베이팅 (Debating)</h4>
+                </div>
+                <div class="panel-body"><p>정해진 주제에 찬반을 나누어 논의 하게 되며, 아이디어 회의로 의견수렴, 발표, 질문, 반박 등으로 진행 됩니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel8 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>생활영어 통합 I,II</h4>
+                </div>
+                <div class="panel-body"><p>패턴영어, 상황영어, 기초토픽이 통합되어 있는 강의입니다. 종합적이고 다방면의 접근으로 회화 분야와 표현을 넓힐 수 있습니다. 기본적인 회화의 이해와 숙달이 가능하신 분들에게 적절한 수업으로 더 많은 집중과 시간 할애를 요합니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel9 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>비즈니스 통합 I,II</h4>
+                </div>
+                <div class="panel-body"><p>비즈니스와 관련된 패턴영어, 상황영어, 기초토픽 이 통합되어 있는 강의입니다. 종합적이고 다방면의 접근으로 회화 분야와 표현을 넓힐 수 있습니다. 기본적인 회화의 이해와 숙달이 가능하신 분들에게 적절한 수업으로 더 많은 집중과 시간 할애를 요합니다.</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel10 panel-default equal-height">
+                <div class="panel-heading">
+                  <h4>생활/비즈니스 영어 I,II</h4>
+                </div>
+                <div class="panel-body"><p>생활과 비즈니스의 패턴영어, 상황영어, 기초토픽 모두가 필요하신 분들을 위한 강의로 일상 생활부터 회사에 관련된 많은 표현들을 배우게 됩니다. 기본적인 회화의 이해와 숙달이 가능하신 분들에게 적절한 수업으로 더 많은 집중과 시간 할애를 요합니다.</p></div>
+              </div>
+            </div>
+
+
+          </div><!-- /.row -->
+
+
+          <hr>
+
+
+          <div id="activity-classes">
+
+          <h2>액티비티 강의 <small>Activity Classes</small></h2>
+          <p>나에게 맞는 다양한 액티비티 강의를 통해 좀더 재미있고 효율적으로 영어를 배울 수 있도록 구성되어 있는 프로그램입니다. 강의는 일주일에 한번씩 5회 진행되고, 음악, 발음, 인터뷰, 영화 등이 있으며 수강자의 추천이나 어학원의 판단으로 다른 종류의 액티비티 강의들이 앞으로도 추가 될 예정입니다.</p><p>강의 종류나 스케줄은 어학원 공지란에서 확인 하실 수 있습니다.</p>
+
+
+            <div class="media activity-music">
+              <div class="media-left">
+                <i class="fa fa-music"></i>
+              </div>
+              <div class="media-body">
+                <h3>Music</h3>
+                <p>해외 가요의 영어 가사를 통해 배우는 흥미로운 표현들과 문법에 얽매이지 않고서도 자연스럽게 문법을 체득하는 음악 수업 입니다. 수업시간에는 배울 수 없었던 은어들과 은유적으로 숨겨진 의미를 가진 표현들을 뮤직비디오, 음악 등의 매체를 통해 쉽고 직관적으로 배울 수 있습니다.</p>
+              </div>
+            </div>
+
+
+            <div class="media activity-phonics">
+              <div class="media-left">
+                <i class="fa fa-commenting-o"></i>
+              </div>
+              <div class="media-body">
+                <h3>Phonics</h3>
+                <p>영어 말하기에 있어서 가장 기초가 되는 것 중 하나인 발음을 연습하고 교정 받게 됩니다. 발음에 자신이 없어서 영어가 어렵게 느껴지시는 분들, 발음을 조금 더 자연스럽게 다듬고 싶으신 분들을 위한 강의 입니다. </p>
+              </div>
+            </div>
+
+
+            <div class="media activity-tv">
+              <div class="media-left">
+                <i class="fa fa-television"></i>
+              </div>
+              <div class="media-body">
+                <h3>TV Show</h3>
+                <p>외국 드라마나 영화를 보며 이루어지는 강의로 현대 영어의 이해와 실전 영어의 문장구성, 은어 등을 접하고 배울 수 있는 강의 입니다.</p>
+              </div>
+            </div>
+
+
+            <div class="media activity-interview">
+              <div class="media-left">
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="media-body">
+                <h3>Interview</h3>
+                <p>영어 인터뷰를 대비하는 강의로 전반적인 인터뷰의 흐름을 배울 수 있는 강의입니다. 또한 본인에게 맞는 내용을 구축하여 연습하고 실전처럼 테스트도 해보는 강의로 영어 인터뷰를 준비하시는 분들에게 좋은 경험이 될 수 있습니다.</p>
+              </div>
+            </div>
+
+          </div><!-- /#activity-classes -->
+
+
+        </section>
+
+      </article>
+    </main>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+{{/post}}
+
